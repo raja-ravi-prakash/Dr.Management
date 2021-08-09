@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0em;
+  margin: 0em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Squada One", cursive;
+  user-select: none;
+}
+
+html,
+body {
+  width: 99.5vw;
+  height: 100vh;
+}
+
+.nav {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1.5em;
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.box {
+  padding: 1em;
+  margin: 1em;
+  width: 50em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.select {
+  padding: 1em;
+  margin: 1em;
+  width: 52.5em;
+}
+
+.box-s {
+  padding: 1em;
+  width: fit-content;
+  margin: 1em;
+  width: 52.5em;
+  background-color: #5856d6;
+  color: white;
+  border: none;
+  border-radius: 0.5em;
+}
+
+.d-box {
+  padding: 1em;
+  font-size: 1.5em;
+}
+
+.doc-n {
+  font-size: 1.5em;
+  padding: 1em;
+  background-color: #9bbdf9;
+  color: white;
+}
+
+.doc-con {
+  width: 100%;
+  box-shadow: 0px 0px 2em rgba(0, 0, 0, 0.123);
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.doc-con:hover {
+  box-shadow: 0px 0px 2.5em rgba(0, 0, 0, 0.212);
+}
+
+.coni {
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-columns: max-content;
+  grid-gap: 1.5em;
+}
+
+.options {
+  margin-right: 1em;
+  font-size: 0.8em;
+}
+
+.title {
+  margin-left: 1em;
+}
+
+a {
+  margin-right: 1em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.555);
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .options {
+    font-size: 0.5em;
+    margin: 0em;
+    margin-top: 2em;
+  }
+
+  .title {
+    margin: 0em;
+  }
+
+  img {
+    width: 70vw !important;
+  }
+
+  .box {
+    width: 70vw;
+  }
+
+  .box-s {
+    width: 78vw;
+  }
+
+  .select {
+    width: 78vw;
+  }
+
+  .d-box {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 1.3em;
+  }
+
+  .coni {
+    grid-template-columns: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+  border-radius: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
